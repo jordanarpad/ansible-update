@@ -2,7 +2,7 @@
 
 Usage:
 
-$ git clone git@github.com:jordanarpad/ansible-update.git
+$ git clone https://github.com/jordanarpad/ansible-update.git
 
 $ cd ansible-update
 

@@ -10,5 +10,5 @@ sudo apt install ansible
 ```
 git clone https://github.com/jordanarpad/ansible-update.git
 cd ansible-update
-ansible-playbook -i ./inventory apt.yml
+ansible-playbook -i inventory apt.yml
 ```

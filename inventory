@@ -3,3 +3,10 @@ pi0w
 pi02w
 pi1b
 pi4b2
+pi0
+
+[penguin]
+localhost
+
+[penguin:vars]
+ansible_python_interpreter=/usr/bin/python3

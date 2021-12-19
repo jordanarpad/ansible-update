@@ -13,3 +13,11 @@
     tasks:
       - name: update pihole
         command: "pihole -up"
+  - hosts: penguin
+    tasks:
+      - become: yes
+        apt:
+          force_apt_get: yes
+          update_cache: yes
+          name: "*"
+          state: latest

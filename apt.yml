@@ -13,7 +13,7 @@
     tasks:
       - name: update pihole
         command: "pihole -up"
-  - hosts: penguin
+  - hosts: pi4g
     tasks:
       - become: yes
         apt:

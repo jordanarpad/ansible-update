@@ -1,12 +1,16 @@
 [pi]
+pi1b
+pi0
 pi0w
 pi02w
-pi1b
+pi4b1
 pi4b2
-pi0
 
-[penguin]
+[pi:vars]
+ansible_python_interpreter=/usr/bin/python3
+
+[pi4g]
 localhost
 
-[penguin:vars]
+[pi4g:vars]
 ansible_python_interpreter=/usr/bin/python3

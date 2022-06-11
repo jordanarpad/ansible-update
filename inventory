@@ -1,7 +1,6 @@
 [pi]
 pi1b
 pi0
-pi0w
 pi02w
 pi4b1
 pi4b2
@@ -10,6 +9,7 @@ pi4b2
 ansible_python_interpreter=/usr/bin/python3
 
 [pi4g_rpios]
+pi0w
 localhost
 
 [pi4g_rpios:vars]

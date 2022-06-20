@@ -1,5 +1,5 @@
 ---
-  - hosts: pi
+  - hosts: buster
     remote_user: pi
     tasks:
       - become: yes
@@ -13,7 +13,7 @@
     tasks:
       - name: update pihole
         command: "pihole -up"
-  - hosts: pi4g_rpios
+  - hosts: bullseye
     tasks:
       - become: yes
         apt:

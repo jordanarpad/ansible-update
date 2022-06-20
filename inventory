@@ -1,11 +1,11 @@
 [buster]
-pi1b
 pi4b1.zerotier
 
 [buster:vars]
 ansible_python_interpreter=/usr/bin/python3
 
 [bullseye]
+pi1b
 pi0.zerotier
 pi0w
 pi02w

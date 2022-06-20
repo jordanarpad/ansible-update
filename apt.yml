@@ -9,7 +9,6 @@
           name: "*"
           state: latest
   - hosts: pi1b
-    remote_user: pi
     tasks:
       - name: update pihole
         command: "pihole -up"

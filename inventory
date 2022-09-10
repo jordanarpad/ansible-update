@@ -1,16 +1,15 @@
-[buster]
-pi4b1.zerotier
-
-[buster:vars]
-ansible_python_interpreter=/usr/bin/python3
-
-[bullseye]
+[pi]
 pi1b
 pi0.zerotier
 pi0w
 pi02w
 pi4b2
-localhost
 
-[bullseye:vars]
+[pi:vars]
+ansible_python_interpreter=/usr/bin/python3
+
+[inovato]
+inovato
+
+[inovato:vars]
 ansible_python_interpreter=/usr/bin/python3

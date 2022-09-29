@@ -13,12 +13,3 @@
           update_cache: yes
           name: "*"
           state: latest
-  - hosts: inovato
-    remote_user: quadra
-    tasks:
-      - become: yes
-        apt:
-          force_apt_get: yes
-          update_cache: yes
-          name: "*"
-          state: latest

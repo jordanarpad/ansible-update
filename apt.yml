@@ -1,11 +1,18 @@
 ---
   - hosts: pi1b
-    remote_user: jordana
     tasks:
       - name: update pihole
         command: "pihole -up"
   - hosts: pi
-    remote_user: jordana
+    tasks:
+      - become: yes
+        apt:
+          force_apt_get: yes
+          update_cache: yes
+          name: "*"
+          state: latest
+  - hosts: buster
+    remote_user: pi
     tasks:
       - become: yes
         apt:

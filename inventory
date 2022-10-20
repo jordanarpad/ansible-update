@@ -6,11 +6,11 @@ pi02w
 pi4b2
 pi4g
 
-[pi:vars]
+[bullseye:vars]
 ansible_python_interpreter=/usr/bin/python3
 
 [buster]
 pi4b1.zt
 
-[pi:vars]
+[buster:vars]
 ansible_python_interpreter=/usr/bin/python3

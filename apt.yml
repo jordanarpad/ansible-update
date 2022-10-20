@@ -1,9 +1,11 @@
 ---
   - hosts: pi1b
+    remote_user: jordana
     tasks:
       - name: update pihole
         command: "pihole -up"
-  - hosts: pi
+  - hosts: bullseye
+    remote_user: jordana
     tasks:
       - become: yes
         apt:

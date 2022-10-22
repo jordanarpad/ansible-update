@@ -1,10 +1,10 @@
 [bullseye]
+pi4g
 pi1b
 pi0.zt
 pi0w.zt
-pi02w
-pi4b2
-pi4g
+pi02w.zt
+pi4b2.zt
 
 [bullseye:vars]
 ansible_python_interpreter=/usr/bin/python3

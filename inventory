@@ -1,17 +1,17 @@
-[bullseye]
+[jordana]
 pi1b
 pi0.zt
 pi0w.zt
 pi02w.zt
 pi4b2.zt
 
-[bullseye:vars]
+[jordana:vars]
 ansible_python_interpreter=/usr/bin/python3
 
-[buster]
+[pi]
 pi4b1.zt
 
-[buster:vars]
+[pi:vars]
 ansible_python_interpreter=/usr/bin/python3
 
 [ubuntu]

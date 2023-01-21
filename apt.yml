@@ -1,10 +1,23 @@
 ---
-  - hosts: pi1b
-    remote_user: jordana
+  - hosts: ubuntu
+    remote_user: ubuntu
     tasks:
-      - name: update pihole
-        command: "pihole -up"
-  - hosts: bullseye
+      - become: yes
+        apt:
+          force_apt_get: yes
+          update_cache: yes
+          name: "*"
+          state: latest
+  - hosts: quadra
+    remote_user: quadra
+    tasks:
+      - become: yes
+        apt:
+          force_apt_get: yes
+          update_cache: yes
+          name: "*"
+          state: latest
+  - hosts: jordana
     remote_user: jordana
     tasks:
       - become: yes
@@ -13,7 +26,12 @@
           update_cache: yes
           name: "*"
           state: latest
-  - hosts: buster
+  - hosts: pi1b
+    remote_user: jordana
+    tasks:
+      - name: update pihole
+        command: "pihole -up"
+  - hosts: pi
     remote_user: pi
     tasks:
       - become: yes
@@ -22,3 +40,4 @@
           update_cache: yes
           name: "*"
           state: latest
+

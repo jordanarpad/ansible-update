@@ -1,5 +1,17 @@
+[ubuntu]
+oracle.zt
+
+[ubuntu:vars]
+ansible_python_interpreter=/usr/bin/python3
+
+[quadra]
+inovato.zt
+
+[quadra:vars]
+ansible_python_interpreter=/usr/bin/python3
+
 [jordana]
-pi1b
+pi1b.zt
 pi0.zt
 pi0w.zt
 pi02w.zt
@@ -12,16 +24,4 @@ ansible_python_interpreter=/usr/bin/python3
 pi4b1.zt
 
 [pi:vars]
-ansible_python_interpreter=/usr/bin/python3
-
-[ubuntu]
-oracle.zt
-
-[ubuntu:vars]
-ansible_python_interpreter=/usr/bin/python3
-
-[quadra]
-inovato.zt
-
-[quadra:vars]
 ansible_python_interpreter=/usr/bin/python3

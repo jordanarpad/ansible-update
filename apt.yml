@@ -26,7 +26,7 @@
           update_cache: yes
           name: "*"
           state: latest
-  - hosts: pi1b
+  - hosts: pi1b.zt
     remote_user: jordana
     tasks:
       - name: update pihole

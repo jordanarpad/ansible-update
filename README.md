@@ -11,3 +11,6 @@ sudo apt install ansible
 git clone https://github.com/jordanarpad/ansible-update.git
 ansible-playbook -i ansible-update/inventory ansible-update/apt.yml
 ```
+For names I use zeronsd as detailed in the following post:
+
+https://myraspberrypiadventure.blogspot.com/2023/03/running-ansible-apt-via-zerotier-from.html

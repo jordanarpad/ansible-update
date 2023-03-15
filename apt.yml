@@ -1,5 +1,5 @@
 ---
-  - hosts: ubuntu
+  - hosts: oracle
     remote_user: ubuntu
     tasks:
       - become: yes
@@ -8,8 +8,17 @@
           update_cache: yes
           name: "*"
           state: latest
-  - hosts: quadra
+  - hosts: inovato
     remote_user: quadra
+    tasks:
+      - become: yes
+        apt:
+          force_apt_get: yes
+          update_cache: yes
+          name: "*"
+          state: latest
+  - hosts: aws
+    remote_user: admin
     tasks:
       - become: yes
         apt:
@@ -26,7 +35,7 @@
           update_cache: yes
           name: "*"
           state: latest
-  - hosts: pi1b.zt
+  - hosts: pi1b.zeronsd
     remote_user: jordana
     tasks:
       - name: update pihole
@@ -40,4 +49,3 @@
           update_cache: yes
           name: "*"
           state: latest
-

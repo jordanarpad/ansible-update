@@ -1,27 +1,33 @@
-[ubuntu]
-oracle.zt
+[oracle]
+oracle.zeronsd
 
-[ubuntu:vars]
+[oracle:vars]
 ansible_python_interpreter=/usr/bin/python3
 
-[quadra]
-inovato.zt
+[inovato]
+inovato.zeronsd
 
-[quadra:vars]
+[inovato:vars]
+ansible_python_interpreter=/usr/bin/python3
+
+[aws]
+aws.zeronsd
+
+[aws:vars]
 ansible_python_interpreter=/usr/bin/python3
 
 [jordana]
-pi1b.zt
-pi0.zt
-pi0w.zt
-pi02w.zt
-pi4b2.zt
+pi1b.zeronsd
+pi0.zeronsd
+pi02w.zeronsd
+pi4b2.zeronsd
+chromebook.zeronsd
 
 [jordana:vars]
 ansible_python_interpreter=/usr/bin/python3
 
 [pi]
-pi4b1.zt
+pi4b1.zeronsd
 
 [pi:vars]
 ansible_python_interpreter=/usr/bin/python3

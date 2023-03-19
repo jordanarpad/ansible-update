@@ -10,12 +10,6 @@ inovato.zeronsd
 [inovato:vars]
 ansible_python_interpreter=/usr/bin/python3
 
-[aws]
-aws.zeronsd
-
-[aws:vars]
-ansible_python_interpreter=/usr/bin/python3
-
 [jordana]
 pi1b.zeronsd
 pi0.zeronsd

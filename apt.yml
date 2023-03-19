@@ -17,15 +17,6 @@
           update_cache: yes
           name: "*"
           state: latest
-  - hosts: aws
-    remote_user: admin
-    tasks:
-      - become: yes
-        apt:
-          force_apt_get: yes
-          update_cache: yes
-          name: "*"
-          state: latest
   - hosts: jordana
     remote_user: jordana
     tasks:

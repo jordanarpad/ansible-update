@@ -17,7 +17,7 @@
           update_cache: yes
           name: "*"
           state: latest
- - hosts: inovato
+  - hosts: inovato
     remote_user: quadra
     tasks:
       - become: yes

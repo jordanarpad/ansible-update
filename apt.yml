@@ -8,31 +8,17 @@
           update_cache: yes
           name: "*"
           state: latest
-  - hosts: inovato
+  - hosts: raspberry
+    remote_user: jordana
+    tasks:
+      - become: yes
+        apt:
+          force_apt_get: yes
+          update_cache: yes
+          name: "*"
+          state: latest
+ - hosts: inovato
     remote_user: quadra
-    tasks:
-      - become: yes
-        apt:
-          force_apt_get: yes
-          update_cache: yes
-          name: "*"
-          state: latest
-  - hosts: jordana
-    remote_user: jordana
-    tasks:
-      - become: yes
-        apt:
-          force_apt_get: yes
-          update_cache: yes
-          name: "*"
-          state: latest
-  - hosts: pi1b.zeronsd
-    remote_user: jordana
-    tasks:
-      - name: update pihole
-        command: "pihole -up"
-  - hosts: pi
-    remote_user: pi
     tasks:
       - become: yes
         apt:
